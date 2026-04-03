@@ -7,9 +7,7 @@ require("dotenv").config();
 // Middleware
 app.use(express.json());
 app.use(
-  cors({
-    origin: "https://polaris-app-rouge.vercel.app",
-  }),
+  cors(),
 );
 
 const PORT = process.env.PORT || 5000;
